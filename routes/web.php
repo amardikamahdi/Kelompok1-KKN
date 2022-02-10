@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MateriController;
 use App\Http\Controllers\Dashboard\GuruController;
 
 /*
@@ -29,5 +30,7 @@ Route::middleware(['auth'])->name('dashboard')->prefix('dashboard')->group(funct
         return view('dashboard.materi');
     })->name('.materi');
 });
+
+Route::get('materi', [MateriController::class, 'index'])->name('materi');
 
 require __DIR__.'/auth.php';
