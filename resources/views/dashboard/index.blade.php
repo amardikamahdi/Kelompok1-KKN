@@ -45,7 +45,7 @@
                         Jumlah Materi
                     </p>
                     <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
-                        35
+                        10
                     </p>
                 </div>
             </div>
@@ -121,6 +121,35 @@
                             </td>
                             <td class="px-4 py-3 text-sm">
                                 Jakarta, 11 Maret 2000
+                            </td>
+                        </tr>
+                        <tr class="text-gray-700 dark:text-gray-400">
+                            <td class="px-4 py-3">
+                                <div class="flex items-center text-sm">
+                                    <!-- Avatar with inset shadow -->
+                                    <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                        <img class="object-cover w-full h-full rounded-full"
+                                            src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=200&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
+                                            alt="" loading="lazy">
+                                        <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold">Syarita Nur Azizah</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3 text-sm">
+                                5B
+                            </td>
+                            <td class="px-4 py-3 text-xs">
+                                <span
+                                    class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100">
+                                    Aktif
+                                </span>
+                            </td>
+                            <td class="px-4 py-3 text-sm">
+                                Wonogiri, 19 Oktober 2000
                             </td>
                         </tr>
                         <tr class="text-gray-700 dark:text-gray-400">
@@ -210,42 +239,13 @@
                                 Wonogiri, 18 Juni 2000
                             </td>
                         </tr>
-                        <tr class="text-gray-700 dark:text-gray-400">
-                            <td class="px-4 py-3">
-                                <div class="flex items-center text-sm">
-                                    <!-- Avatar with inset shadow -->
-                                    <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                        <img class="object-cover w-full h-full rounded-full"
-                                            src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
-                                            alt="" loading="lazy" />
-                                        <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="font-semibold">Syarita Nur Azizah</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="px-4 py-3 text-sm">
-                                5B
-                            </td>
-                            <td class="px-4 py-3 text-xs">
-                                <span
-                                    class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100">
-                                    Aktif
-                                </span>
-                            </td>
-                            <td class="px-4 py-3 text-sm">
-                                Wonogiri, 19 Oktober 1999
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
             <div
                 class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
                 <span class="flex items-center col-span-3">
-                    Showing of 60
+                    Showing of 6
                 </span>
                 <span class="col-span-2"></span>
                 <!-- Pagination -->

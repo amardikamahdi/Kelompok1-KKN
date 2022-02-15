@@ -10,6 +10,10 @@ class GuruController extends Controller
 {
     public function index()
     {
-        return view('dashboard.guru');
+        $data = [
+            'allTeachers' => Guru::all(),
+            'activeTeachers' => Guru::where('status', '=', 'Aktif')->count()
+        ];
+        return view('dashboard.guru', $data);
     }
 }
