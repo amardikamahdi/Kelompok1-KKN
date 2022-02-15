@@ -30,7 +30,7 @@ Route::middleware(['auth'])->name('dashboard')->prefix('dashboard')->group(funct
     Route::get('/materi', [DashboardMateriController::class, 'index'])->name('.materi');
 });
 
-Route::get('materi', [MateriController::class, 'index'])->name('materi');
+Route::get('materi', [MateriController::class, 'index'])->name('indexMateri');
 Route::get('materi/{classId}/{themeId}', [MateriController::class, 'findMateri'])->name('findMateri');
 
 require __DIR__.'/auth.php';
