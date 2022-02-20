@@ -21,4 +21,12 @@ class MateriController extends Controller
         ];
         return view('materi.findIndex', $data);
     }
+
+    public function detailMateri($materiId)
+    {
+        $data = [
+            'materi' => Materi::find($materiId)->get()
+        ];
+        return view('materi.detail', $data);
+    }
 }
