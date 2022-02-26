@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\MateriController as MateriController;
 use App\Http\Controllers\Dashboard\MateriController as DashboardMateriController;
 use App\Http\Controllers\Dashboard\GuruController;
@@ -16,9 +17,7 @@ use App\Http\Controllers\Dashboard\GuruController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', [WelcomeController::class, 'index'])->name('home');
 
 Route::middleware(['auth'])->name('dashboard')->prefix('dashboard')->group(function(){
     Route::get('/', function(){
@@ -27,7 +26,11 @@ Route::middleware(['auth'])->name('dashboard')->prefix('dashboard')->group(funct
 
     Route::get('/guru', [GuruController::class, 'index'])->name('.guru');
 
-    Route::get('/materi', [DashboardMateriController::class, 'index'])->name('.materi');
+    Route::prefix('materi')->name('.materi')->group(function(){
+        Route::get('/', [DashboardMateriController::class, 'index'])->name('.index');
+        Route::get('/materi/add', [DashboardMateriController::class, 'addMateri'])->name('.add');
+        Route::post('/materi/create', [DashboardMateriController::class, 'createMateri'])->name('.create');
+    });
 });
 
 Route::get('materi', [MateriController::class, 'index'])->name('indexMateri');

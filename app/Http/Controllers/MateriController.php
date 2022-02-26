@@ -25,7 +25,7 @@ class MateriController extends Controller
     public function detailMateri($materiId)
     {
         $data = [
-            'materi' => Materi::find($materiId)->get()
+            'materi' => Materi::find($materiId)
         ];
         return view('materi.detail', $data);
     }

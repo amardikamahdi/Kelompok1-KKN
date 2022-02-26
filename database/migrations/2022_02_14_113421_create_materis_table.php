@@ -20,6 +20,7 @@ class CreateMaterisTable extends Migration
             $table->text('description');
             $table->string('theme');
             $table->string('subject');
+            $table->string('file')->nullable();
             $table->string('uploaded_by');
             $table->timestamps();
         });
